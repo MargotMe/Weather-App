@@ -1,3 +1,182 @@
+.container {
+  border: solid #b6cdd4 2px;
+  border-radius: 5px;
+  max-width: 800px;
+  background: radial-gradient(
+    circle at 10% 20%,
+    rgba(216, 241, 230, 0.46) 0.1%,
+    rgba(233, 226, 226, 0.28) 90.1%
+  );
+  margin: 10px auto;
+  font-family: "Roboto", sans-serif;
+}
+h2 {
+  font-size: 12px;
+  padding: 5px 0 0;
+  margin: 0;
+}
 h1 {
-  color: blueviolet;
+  padding: 0;
+  margin: 0;
+  font-size: 48px;
+  text-transform: capitalize;
+}
+h3 {
+  font-size: 18px;
+}
+h3 strong {
+  font-size: 24px;
+}
+
+form {
+  margin: 5px auto;
+}
+.today-info {
+  height: 180px;
+}
+#city {
+  border: 1px solid rgb(255, 193, 182, 0.4);
+  border-radius: 5px;
+  line-height: 1.25;
+  height: 50px;
+  width: 70%;
+  background: rgb(255, 238, 187, 0.3);
+  transition: all 0.4s ease-in-out;
+}
+#city:hover {
+  background: rgb(255, 193, 182, 0.3);
+}
+.search {
+  letter-spacing: normal;
+  line-height: 1.25;
+  height: 50px;
+  width: 20%;
+  transition: all 0.4s ease-in-out;
+  background: rgb(255, 238, 187, 0.3);
+  border: 1px solid rgb(255, 193, 182, 0.4);
+  border-radius: 5px;
+  color: #ffc1b6;
+}
+.search:hover {
+  letter-spacing: 4px;
+  padding: 0 18px;
+  font-weight: 600;
+  background: rgb(255, 193, 182, 0.5);
+  color: #e4c158;
+}
+.currentLocation {
+  line-height: 1.25;
+  height: 50px;
+  width: 8%;
+  transition: all 0.4s ease-in-out;
+  background: rgb(255, 238, 187, 0.3);
+  border: 1px solid rgb(255, 193, 182, 0.4);
+  border-radius: 5px;
+  color: #ffc1b6;
+  text-align: center;
+}
+.currentLocation:hover {
+  background: rgb(255, 193, 182, 0.5);
+  color: #e4c158;
+}
+.today-info {
+  padding: 10px 0;
+}
+.indexes {
+  text-align: left;
+  font-size: 12px;
+  list-style: none;
+  padding: 10px 5px;
+  line-height: 2;
+}
+
+#temp-num {
+  font-size: 80px;
+}
+.degreeUnits {
+  font-size: 14px;
+  position: relative;
+  top: -50px;
+}
+#celsius-unit,
+#fahrenheit-unit {
+  text-decoration: none;
+  color: #212529;
+}
+.img-weather-today {
+  width: 42%;
+}
+.description {
+  text-align: center;
+  text-transform: capitalize;
+}
+.extra-info {
+  padding: 15px 0;
+}
+.advice {
+  font-family: "Courgette", cursive;
+}
+.sunrise-logo {
+  max-width: 15%;
+}
+.sunset-logo {
+  max-width: 15%;
+}
+.sunrise-sunset {
+  padding: 15px 0;
+}
+.following-days {
+  margin: 0;
+  padding: 0 0;
+  bottom: 0;
+}
+.card-img-top {
+  width: 50%;
+  display: block;
+  margin: 0 auto;
+}
+h5.day {
+  font-size: 10px;
+}
+.card-odd .card-even {
+  border: none;
+}
+.card-odd {
+  background: rgba(255, 255, 255, 0.2);
+}
+.card-even {
+  background: rgba(177, 173, 173, 0.1);
+}
+.card-body {
+  padding: 0;
+}
+.day {
+  text-align: center;
+  line-height: 1.5;
+  margin: 0;
+}
+.temp-days {
+  text-align: center;
+  font-size: 12px;
+  margin: 0;
+  line-height: 1.5;
+}
+.temp-days strong {
+  font-size: 14px;
+}
+h6 {
+  font-family: monospace;
+  text-align: center;
+  font-size: 10px;
+  color: rgb(0 0 0 / 0.4);
+  text-decoration: none;
+}
+#source-code {
+  color: rgb(0 0 0 / 0.6);
+  transition: all 200ms ease-in-out;
+  cursor: pointer;
+}
+#source-code:hover {
+  color: rgb(0 0 0 / 0.4);
+  transition: all 200ms ease-in-out;
 }
