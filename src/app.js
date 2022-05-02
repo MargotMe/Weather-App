@@ -49,9 +49,9 @@ function getCityName(city) {
 function showWeather(response) {
   console.log(response);
   document.querySelector("#city-name").innerHTML = response.data.name;
-  document.querySelector("#temp-num").innerHTML = Math.round(
-    response.data.main.temp
-  );
+  let celsiusTemperature = response.data.main.temp;
+  document.querySelector("#temp-num").innerHTML =
+    Math.round(celsiusTemperature);
   document.querySelector("#wind").innerHTML = Math.round(
     response.data.wind.speed
   );
@@ -126,12 +126,19 @@ let fahrenheitUnit = document.querySelector("#fahrenheit-unit");
 function celsiusTemp(event) {
   event.preventDefault();
   let tempNum = document.querySelector("#temp-num");
-  tempNum.innerHTML = 17;
+  tempNum.innerHTML = Math.round(celsiusTemperature);
+  celsiusUnit.classList.add("active");
+  fahrenheitUnit.classList.remove("active");
 }
 celsiusUnit.addEventListener("click", celsiusTemp);
 function fahrenheitTemp(event) {
   event.preventDefault();
   let tempNum = document.querySelector("#temp-num");
-  tempNum.innerHTML = 63;
+  let farenheitTemperature = (celsiusTemperature * 9) / 5 + 32;
+  tempNum.innerHTML = Math.round(farenheitTemperature);
+  celsiusUnit.classList.remove("active");
+  fahrenheitUnit.classList.add("active");
 }
 fahrenheitUnit.addEventListener("click", fahrenheitTemp);
+
+let celsiusTemperature = null;

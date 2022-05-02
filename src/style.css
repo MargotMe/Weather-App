@@ -102,6 +102,9 @@ form {
   position: relative;
   top: -38px;
 }
+.degreeUnits .active {
+  cursor: default;
+}
 #celsius-unit,
 #fahrenheit-unit {
   text-decoration: none;
