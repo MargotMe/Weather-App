@@ -91,12 +91,12 @@ form {
 }
 
 #temp-num {
-  font-size: 80px;
+  font-size: 70px;
 }
 .degreeUnits {
   font-size: 14px;
   position: relative;
-  top: -50px;
+  top: -38px;
 }
 #celsius-unit,
 #fahrenheit-unit {
@@ -104,17 +104,16 @@ form {
   color: #212529;
 }
 .img-weather-today {
-  width: 42%;
+  width: 50%;
 }
 .description {
   text-align: center;
   text-transform: capitalize;
+  position: relative;
+  top: -30px;
 }
 .extra-info {
   padding: 15px 0;
-}
-.advice {
-  font-family: "Courgette", cursive;
 }
 .sunrise-logo {
   max-width: 15%;
