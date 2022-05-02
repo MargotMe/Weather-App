@@ -89,6 +89,10 @@ form {
   padding: 10px 5px;
   line-height: 2;
 }
+.today-temp {
+  top: -20px;
+  position: relative;
+}
 
 #temp-num {
   font-size: 70px;
@@ -104,7 +108,7 @@ form {
   color: #212529;
 }
 .img-weather-today {
-  width: 50%;
+  width: 52%;
 }
 .description {
   text-align: center;
