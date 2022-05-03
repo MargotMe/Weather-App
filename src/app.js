@@ -49,7 +49,7 @@ function getCityName(city) {
 function showWeather(response) {
   console.log(response);
   document.querySelector("#city-name").innerHTML = response.data.name;
-  let celsiusTemperature = response.data.main.temp;
+  celsiusTemperature = response.data.main.temp;
   document.querySelector("#temp-num").innerHTML =
     Math.round(celsiusTemperature);
   document.querySelector("#wind").innerHTML = Math.round(

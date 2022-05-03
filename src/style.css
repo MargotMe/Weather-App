@@ -129,11 +129,12 @@ form {
   max-width: 15%;
 }
 .sunrise-sunset {
-  padding: 15px 0;
+  padding: 20px 0;
+  line-height: 2;
 }
 .following-days {
   margin: 0;
-  padding: 0 0;
+  padding: 0;
   bottom: 0;
 }
 .card-img-top {
