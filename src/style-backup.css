@@ -142,10 +142,7 @@ form {
   display: block;
   margin: 0 auto;
 }
-.weather-forecast-day {
-  text-align: center;
-  line-height: 1.5;
-  margin: 0;
+h5.day {
   font-size: 14px;
 }
 .card-odd .card-even {
@@ -160,16 +157,11 @@ form {
 .card-body {
   padding: 0;
 }
-.weather-forecast-temperature-max {
-  font-weight: 900;
-  font-size: 12px;
+.day {
+  text-align: center;
+  line-height: 1.5;
+  margin: 0;
 }
-.weather-forecast-temperature-min {
-  font-weight: 500;
-  opacity: 0.8;
-  font-size: 11px;
-}
-
 .temp-days {
   text-align: center;
   font-size: 12px;
